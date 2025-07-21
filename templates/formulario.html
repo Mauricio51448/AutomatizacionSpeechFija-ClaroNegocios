@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generador de Contratos Fija 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 40px;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1565c0;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulario para el Speech de Fija - Negocios</h2>
+        <form method="POST">
+            <label>Nombre del RRLL:</label>
+            <input name="nombreRRLL" required>
+
+            <label>DNI:</label>
+            <input name="dni" required>
+
+            <label>Fecha y Lugar de Nacimiento:</label>
+            <input name="fechaylugarnacimiento" required>
+
+            <label>Domicilio Fiscal:</label>
+            <input name="domiciliofiscal" required>
+
+            <label>Dirección de Instalación:</label>
+            <input name="direccioninstalacion" required>
+
+            <label>Nombre de Padres:</label>
+            <input name="nombrepadres" required>
+
+            <label>Razón Social de la Empresa:</label>
+            <input name="razonsocial" required>
+
+            <label>Nro de RUC:</label>
+            <input name="ruc" required>
+
+            <label>Cargo del RRLL: (Solo para Ruc 20) </label>
+            <input name="cargo" required>
+
+            <label>Nombre del Gerente General: (Solo para Ruc 20) </label>
+            <input name="nombreGerente" required>
+
+            <label>Número de Contacto:</label>
+            <input name="numero" required>
+
+            <label>Correo Electrónico:</label>
+            <input name="correo" type="email" required>
+
+            <label>Páginas Blancas:</label>
+            <input name="paginasblancas">
+
+            <label>Speech:</label>
+            <select name="speech" required>
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="speechprueba1">Speech de Prueba 1</option>
+                <option value="1play_tel5000min">1 PLAY - TLF 5000 MIN</option>
+                <option value="1play_150mbps_ftth">1 PLAY - 150mbps FTTH</option>
+                <option value="1play_150mbps_ftth_atq">1 PLAY - 150mbps FTTH ATQ</option>
+                <option value="1play_150mbps_hfc">1 PLAY - 150mbps HFC</option>
+                <option value="1play_300mbps_ftth">1 PLAY - 300mbps FTTH</option>
+                <option value="1play_300mbps_hfc">1 PLAY - 300mbps HFC</option>
+                <option value="1play_400mbps_hfc">1 PLAY - 400mbps HFC</option>
+                <option value="1play_400mbps_ftth_sinrepe">1 PLAY - 400mbps FTTH (Sin Repetidor)</option>
+                <!-- Puedes agregar más opciones aquí -->
+            </select>
+
+            <button type="submit">Generar Contrato</button>
+        </form>
+    </div>
+</body>
+</html>

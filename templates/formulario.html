@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generador de Contratos Fija 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 40px;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1565c0;
+        }
+
+       /* */
+    .autocomplete-container {
+        position: relative;
+        width: 100%;
+    }
+
+    #speechInput {
+        width: 100%;
+        padding: 8px 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+
+    .suggestions {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        background: white;
+        border: 1px solid #ccc;
+        border-top: none;
+        max-height: 200px;
+        overflow-y: auto;
+        border-radius: 0 0 6px 6px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .suggestion-item {
+        padding: 10px;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+
+    .suggestion-item:hover {
+        background: #f0f0f0;
+    }
+
+</style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulario para el Speech de Fija - Negocios</h2>
+        <form method="POST">
+            <label>Nombre del RRLL:</label>
+            <input name="nombreRRLL" required>
+
+            <label>DNI:</label>
+            <input name="dni" required>
+
+            <label>Fecha y Lugar de Nacimiento:</label>
+            <input name="fechaylugarnacimiento" required>
+
+            <label>Domicilio Fiscal:</label>
+            <input name="domiciliofiscal" required>
+
+            <label>Dirección de Instalación:</label>
+            <input name="direccioninstalacion" required>
+
+            <label>Nombre de Padres:</label>
+            <input name="nombrepadres" required>
+
+            <label>Razón Social de la Empresa:</label>
+            <input name="razonsocial" required>
+
+            <label>Nro de RUC:</label>
+            <input name="ruc" required>
+
+            <label>Cargo del RRLL: (Solo para Ruc 20) </label>
+            <input name="cargo" required>
+
+            <label>Nombre del Gerente General: (Solo para Ruc 20) </label>
+            <input name="nombreGerente" required>
+
+            <label>Número de Contacto:</label>
+            <input name="numero" required>
+
+            <label>Correo Electrónico:</label>
+            <input name="correo" type="email" required>
+
+            <label>Páginas Blancas:</label>
+            <input name="paginasblancas">
+
+            <!-- 
+            <label>Speech:</label>
+            <select name="speech" required>
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="speechprueba1">Speech de Prueba 1</option>
+                <option value="1play_tel5000min">1 PLAY - TLF 5000 MIN</option>
+                <option value="1play_150mbps_ftth">1 PLAY - 150mbps FTTH</option>
+                <option value="1play_150mbps_ftth_atq">1 PLAY - 150mbps FTTH ATQ</option>
+                <option value="1play_150mbps_hfc">1 PLAY - 150mbps HFC</option>
+                <option value="1play_300mbps_ftth">1 PLAY - 300mbps FTTH</option>
+                <option value="1play_300mbps_hfc">1 PLAY - 300mbps HFC</option>
+                <option value="1play_400mbps_hfc">1 PLAY - 400mbps HFC</option>
+                <option value="1play_400mbps_ftth_sinrepe">1 PLAY - 400mbps FTTH (Sin Repetidor)</option>
+                <option value="1play_800mpbs_hfc">1 PLAY - 800mbps HFC</option>
+                <option value="1play_800mpbs_ftth">1 PLAY - 800mbps FTTH</option>
+                <option value="1play_1000mpbs_hfc">1 PLAY - 1000mbps HFC</option>
+                <option value="1play_1000mbps_ftth">1 PLAY - 1000mbps FTTH</option>
+                <option value="2play_cable_150mbps_hfc">2 PLAY - 150mbps - 2 Decos - HFC</option>
+                <option value="2play_cable_150mbps_ftth">2 PLAY - 150mbps - 2 Decos - FTTH</option>
+                <option value="2play_cable_300mbps_hfc">2 PLAY - 300mbps - 2 Decos - HFC</option>
+                <option value="2play_cable_300mbps_ftth">2 PLAY - 300mbps - 2 Decos - FTTH</option>
+                <option value="2play_cable_400mbps_hfc">2 PLAY - 400mbps - 2 Decos - HFC</option>
+                <option value="2play_cable_400mbps_ftth">2 PLAY - 400mbps - 2 Decos - FTTH</option>
+                -->
+               
+                <!-- Puedes agregar más opciones aquí -->
+            </select>
+
+<label>Speech:</label>
+<div class="autocomplete-container">
+    <input type="text" id="speechInput" name="speech" placeholder="Escribe para buscar..." autocomplete="off" required>
+    <div class="suggestions" id="suggestionsBox"></div>
+</div>
+
+            <button type="submit">Generar Contrato</button>
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    const speechInput = document.getElementById('speechInput');
+    const suggestionsBox = document.getElementById('suggestionsBox');
+
+    const options = [
+        //SPEECH ORIGINAL
+        { value: "speechprueba1", label: "Speech de Prueba 1" },
+        //1 PLAY TLF
+        { value: "1play_tel5000min", label: "1 PLAY - TLF 5000 MIN" },
+        // 1PLAY INTERNET
+        { value: "1play_150mbps_ftth", label: "1 PLAY - 150mbps FTTH" },
+        { value: "1play_150mbps_ftth_atq", label: "1 PLAY - 150mbps FTTH ATQ" },
+        { value: "1play_150mbps_hfc", label: "1 PLAY - 150mbps HFC" },
+        { value: "1play_300mbps_ftth", label: "1 PLAY - 300mbps FTTH" },
+        { value: "1play_300mbps_hfc", label: "1 PLAY - 300mbps HFC" },
+        { value: "1play_400mbps_hfc", label: "1 PLAY - 400mbps HFC" },
+        { value: "1play_400mbps_ftth_sinrepe", label: "1 PLAY - 400mbps FTTH (Sin Repetidor)" },
+        { value: "1play_800mpbs_hfc", label: "1 PLAY - 800mbps HFC" },
+        { value: "1play_800mpbs_ftth", label: "1 PLAY - 800mbps FTTH" },
+        { value: "1play_1000mpbs_hfc", label: "1 PLAY - 1000mbps HFC" },
+        { value: "1play_1000mbps_ftth", label: "1 PLAY - 1000mbps FTTH" },
+        //2 PLAY TLF
+        { value: "2play_tlf_150mbps_ftth", label: "2 PLAY - TLF - 150mbps FTTH" },
+        { value: "2play_tlf_150mbps_ftth_atq", label: "2 PLAY - TLF - 150mbps FTTH - ATQ" },
+        { value: "2play_tlf_300mbps_ftth", label: "2 PLAY - TLF - 300mbps FTTH" },
+        { value: "2play_tlf_400mbps_ftth", label: "2 PLAY - TLF - 400mbps FTTH" },
+        { value: "2play_tlf_800mbps_ftth", label: "2 PLAY - TLF - 800mbps FTTH" },
+        { value: "2play_tlf_150mbps_hfc", label: "2 PLAY - TLF - 150mbps HFC" },
+        { value: "2play_tlf_300mbps_hfc", label: "2 PLAY - TLF - 300mbps HFC" },
+        { value: "2play_tlf_400mbps_hfc", label: "2 PLAY - TLF - 400mbps HFC" },
+        { value: "2play_tlf_800mbps_hfc", label: "2 PLAY - TLF - 800mbps HFC" },
+        //2 PLAY TV
+        { value: "2play_cable_150mbps_hfc", label: "2 PLAY - 150mbps - 2 Decos - HFC" },
+        { value: "2play_cable_150mbps_ftth", label: "2 PLAY - 150mbps - 2 Decos - FTTH" },
+        { value: "2play_cable_300mbps_hfc", label: "2 PLAY - 300mbps - 2 Decos - HFC" },
+        { value: "2play_cable_300mbps_ftth", label: "2 PLAY - 300mbps - 2 Decos - FTTH" },
+        { value: "2play_cable_400mbps_hfc", label: "2 PLAY - 400mbps - 2 Decos - HFC" },
+        { value: "2play_cable_400mbps_ftth", label: "2 PLAY - 400mbps - 2 Decos - FTTH" },
+        //3 PLAY
+        { value: "3play_150mbps_ftth", label: "3 PLAY - 150mbps - 2 Decos - FTTH" },
+        { value: "3play_300mbps_ftth", label: "3 PLAY - 300mbps - 2 Decos - FTTH" },
+        { value: "3play_400mbps_ftth", label: "3 PLAY - 400mbps - 2 Decos - FTTH" },
+        { value: "3play_150mbps_hfc", label: "3 PLAY - 150mbps - 2 Decos - HFC" },
+        { value: "3play_300mbps_hfc", label: "3 PLAY - 300mbps - 2 Decos - HFC" },
+        { value: "3play_400mbps_hfc", label: "3 PLAY - 400mbps - 2 Decos - HFC" }
+    ];
+
+    speechInput.addEventListener('input', () => {
+        const inputVal = speechInput.value.toLowerCase();
+        suggestionsBox.innerHTML = '';
+
+        if (inputVal.length === 0) {
+            return;
+        }
+
+        const filtered = options.filter(option =>
+            option.label.toLowerCase().includes(inputVal)
+        );
+
+        filtered.forEach(option => {
+            const div = document.createElement('div');
+            div.classList.add('suggestion-item');
+            div.textContent = option.label;
+            div.dataset.value = option.value;
+
+            div.addEventListener('click', () => {
+                speechInput.value = option.value; // lo que se enviará por POST
+                suggestionsBox.innerHTML = '';
+            });
+
+            suggestionsBox.appendChild(div);
+        });
+    });
+
+    // Cierra sugerencias si se hace clic fuera
+    document.addEventListener('click', e => {
+        if (!e.target.closest('.autocomplete-container')) {
+            suggestionsBox.innerHTML = '';
+        }
+    });
+</script>
